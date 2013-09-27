@@ -96,10 +96,10 @@ undum.game.situations.s07 = new undum.Situation({
         vorple.html.p(vorple.html.quote("Yes! Let’s make a plan. You ought to come over to my place tomorrow and we can figure out a way to convince Uncle. I’ll send Hashim over in the car to get you.")) +
         vorple.html.p(vorple.html.quote("Hashim is here?")) +
         vorple.html.p(vorple.html.quote("Yes, silly! He came back with us. Anyway forget him. I want to show you the gifts I brought for you! But for now, I have some more gossip for your innocent ears…")) +
-        vorple.html.p("Both of you excitedly gossip more, as the evening draws on, hope alight in both your hearts.")) +
+        vorple.html.p("Both of you excitedly gossip more, as the evening draws on, hope alight in both your hearts.") +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s08", "Scene 8")),
-                                {classes: "options"});
+                                {classes: "options"}));
     },
 });
 
