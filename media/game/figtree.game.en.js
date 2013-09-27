@@ -141,7 +141,8 @@ undum.game.situations.s14 = new undum.Situation({
     enter: function( character, system, from ) {
         system.write( vorple.html.p("You have had the misfortune to be born here. You were born here under circumstance that made you susceptible to your current situation. You see, you are dead now. And it's really your fault. Yes. Really. You were born in the wrong family. You had the wrong name. You had the wrong upbringing and thus you adeserved what happened to you. Your mind wanders off, trying to remember stuff that happened in another life time. It's hard. You can barely make out your own name.") +
                 vorple.html.tag("ul",
-                                vorple.html.tag("li", vorple.html.link("s15", "Scene 15")),
+                                vorple.html.tag("li", vorple.html.link("s15", "Scene 15")) +
+                                vorple.html.tag("li", vorple.html.link("s16", "Scene 16")),
                                 {classes: "options"}));
     },
 });
@@ -166,6 +167,13 @@ undum.game.situations.s16 = new undum.Situation({
 
 undum.game.situations.s17 = new undum.Situation({
     enter: function( character, system, from ) {
+        if (from == "s16")
+            character.sandbox.mainChoice = "sixteen";
+        else if (from == "s13")
+            character.sandbox.mainChoice = "thirteen";
+        else
+            character.sandbox.mainChoice = "boo";
+        
         system.write( vorple.html.p("You have had the misfortune to be born here. You were born here under circumstance that made you susceptible to your current situation. You see, you are dead now. And it's really your fault. Yes. Really. You were born in the wrong family. You had the wrong name. You had the wrong upbringing and thus you adeserved what happened to you. Your mind wanders off, trying to remember stuff that happened in another life time. It's hard. You can barely make out your own name.") +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s18", "Scene 18")),
@@ -176,17 +184,20 @@ undum.game.situations.s17 = new undum.Situation({
 
 undum.game.situations.s18 = new undum.Situation({
     enter: function( character, system, from ) {
-        system.write( vorple.html.p("You have had the misfortune to be born here. You were born here under circumstance that made you susceptible to your current situation. You see, you are dead now. And it's really your fault. Yes. Really. You were born in the wrong family. You had the wrong name. You had the wrong upbringing and thus you adeserved what happened to you. Your mind wanders off, trying to remember stuff that happened in another life time. It's hard. You can barely make out your own name.") +
+        system.write( vorple.html.p("You have had the misfortune to be born here. You were born here under circumstance that made you susceptible to your current situation. You see, you are dead now. And it's really your fault. Yes. Really. You were born in the wrong family. You had the wrong name. You had the wrong upbringing and thus you adeserved what happened to you. Your mind wanders off, trying to remember stuff that happened in another life time. It's hard. You can barely make out your own name."));
         // Conditional clause. If variable is "sixteen", link to 28 and 19. If it is "thirteen", link to 19 and 20. Else, link to 19 and 31.
-                vorple.html.tag("ul",
+        if (character.sandbox.mainChoice == "sixteen")
+                system.write(vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s19", "Scene 19")) +
                                 vorple.html.tag("li", vorple.html.link("s28", "Scene 28")),
-                                {classes: "options"}) +
-                vorple.html.tag("ul",
+                                {classes: "options"}));
+        else if (character.sandbox.mainChoice == "thirteen")
+                system.write(vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s19", "Scene 19")) +
                                 vorple.html.tag("li", vorple.html.link("s20", "Scene 20")),
-                                {classes: "options"}) +
-                vorple.html.tag("ul",
+                                {classes: "options"}));
+        else
+                system.write(vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s19", "Scene 19")) +
                                 vorple.html.tag("li", vorple.html.link("s31", "Scene 31")),
                                 {classes: "options"}));
@@ -195,15 +206,18 @@ undum.game.situations.s18 = new undum.Situation({
 
 undum.game.situations.s19 = new undum.Situation({
     enter: function( character, system, from ) {
-        system.write( vorple.html.p("You have had the misfortune to be born here. You were born here under circumstance that made you susceptible to your current situation. You see, you are dead now. And it's really your fault. Yes. Really. You were born in the wrong family. You had the wrong name. You had the wrong upbringing and thus you adeserved what happened to you. Your mind wanders off, trying to remember stuff that happened in another life time. It's hard. You can barely make out your own name.") +
+        system.write( vorple.html.p("You have had the misfortune to be born here. You were born here under circumstance that made you susceptible to your current situation. You see, you are dead now. And it's really your fault. Yes. Really. You were born in the wrong family. You had the wrong name. You had the wrong upbringing and thus you adeserved what happened to you. Your mind wanders off, trying to remember stuff that happened in another life time. It's hard. You can barely make out your own name."));
         // Conditional clause. If variable is "sixteen", link to 28. If it is "thirteen", link to 20. Else, link to 31.
-                vorple.html.tag("ul",
+        if (character.sandbox.mainChoice == "sixteen")
+                system.write(vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s28", "Scene 28")),
-                                {classes: "options"}) +
-                vorple.html.tag("ul",
+                                {classes: "options"}));
+        else if (character.sandbox.mainChoice == "thirteen")
+                system.write(vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s20", "Scene 20")),
-                                {classes: "options"}) +
-                vorple.html.tag("ul",
+                                {classes: "options"}));
+        else
+                system.write(vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s31", "Scene 31")),
                                 {classes: "options"}));
     },
