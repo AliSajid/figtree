@@ -79,12 +79,12 @@ undum.game.situations.s05 = new undum.Situation({
 
 undum.game.situations.s06 = new undum.Situation({
     enter: function( character, system, from ) {
-        system.write( vorple.html.p(vorple.html.quote("Oh but Samina, I don’t think Abbu will let me…") + "the disappointment creeps into your voice, as you realize how close and yet so far your dreams are.")) +
+        system.write( vorple.html.p(vorple.html.quote("Oh but Samina, I don’t think Abbu will let me...") + " the disappointment creeps into your voice, as you realize how close and yet so far your dreams are.") +
         vorple.html.p("Samina reaches out to pat your hand reassuringly, her cheerful nature exerting itself." + vorple.html.quote("Don’t worry, I’m sure-")) +
         vorple.html.p("The doorbell rings again.") +
                 vorple.html.tag("ul",
-                                vorple.html.tag("li", vorple.html.link("s17", "You go and see who's at the door.")),
-                                {classes: "options"}));
+                                vorple.html.tag("li", vorple.html.link("s17", "You go and see who's at the door."),
+                                {classes: "options"})));
     },
 });
 
@@ -97,7 +97,7 @@ undum.game.situations.s07 = new undum.Situation({
         vorple.html.p("Both of you excitedly gossip more, as the evening draws on, hope alight in both your hearts.")) +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s08", "Scene 8")),
-                                {classes: "options"}));
+                                {classes: "options"});
     },
 });
 
@@ -126,7 +126,7 @@ undum.game.situations.s09 = new undum.Situation({
 
 undum.game.situations.s10 = new undum.Situation({
     enter: function( character, system, from ) {
-        system.write( vorple.html.p("Hashim laughs, as you mumble something." vorple.html.quote("Still the shy Areesha. You should come to the city.  Two weeks there and you’ll be talking like a parrot.")) +
+        system.write( vorple.html.p("Hashim laughs, as you mumble something." + vorple.html.quote("Still the shy Areesha. You should come to the city.  Two weeks there and you’ll be talking like a parrot.")) +
                 vorple.html.p("He gets a phone-call then, and the remainder of the journey passes in silence.  You curse your lack of confidence. Just as you gather up the courage and open your mouth to say something witty, the car stops in front of Samina’s house.") +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s14", "Scene 14")),
@@ -315,9 +315,9 @@ undum.game.situations.s23 = new undum.Situation({
 undum.game.situations.s24 = new undum.Situation({
     enter: function( character, system, from ) {
         system.write( vorple.html.tag("h3", "Six Months Later...") +
-        vorple.html.p("As you put the key into the lock of your tiny flat, you pause for a second and look at the key closely. Even now, it amazes you that you have a key of your own, that you’ve gotten to a point where you can unlock the home you dreamed of. It is a tiny flat, but it comes with the immeasurable gift of freedom. And the love of a wonderful man.")
+        vorple.html.p("As you put the key into the lock of your tiny flat, you pause for a second and look at the key closely. Even now, it amazes you that you have a key of your own, that you’ve gotten to a point where you can unlock the home you dreamed of. It is a tiny flat, but it comes with the immeasurable gift of freedom. And the love of a wonderful man.") +
         vorple.html.p("And so it is at this moment, when returning from the teacher training that you have joined and almost completed, some hours before Hashim also returns from work, just before you enter the home and prepare it in anticipation of his arrival, you take out this time to give thanks. That you are happy, and safe, and able to achieve so much.") + 
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End"))));
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
@@ -342,7 +342,7 @@ undum.game.situations.s26 = new undum.Situation({
         vorple.html.p("You realize that they must have been following you all along. But no one knew of your plans!") + 
         vorple.html.p("Except...") + 
         vorple.html.p("As the bullets plough into you too, with your last blood-filled breath, you curse the name of your once-best friend, who betrayed you.") + 
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End"))));
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
@@ -356,7 +356,7 @@ undum.game.situations.s29 = new undum.Situation({
         vorple.html.p(vorple.html.quote("You can’t keep me here! I will go back! My father...")) + 
         vorple.html.p(vorple.html.quote("Amusing child. Your father will no longer accept you into his home, you know that very well. You have no other choice, my dear. Now go to your room. Your first customer will come by 9 pm. Make sure you are ready.")) + 
         vorple.html.p("A sense of doom and helplessness rises in your chest at your impossible situation, and you rise and stumble in the direction of the stairs.") +
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End"))));
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
@@ -379,7 +379,7 @@ undum.game.situations.s30 = new undum.Situation({
         vorple.html.p("You reach out to hold Laila’s hand and squeeze it." + vorple.html.quote(" I can never thank you enough for how you’ve helped me, Laila.")) + 
         vorple.html.p("Laila smiles. " + vorple.html.quote("This is just the beginning, little sister. You’ll see. You are hardworking and smart. And you have a wonderful life ahead of you.")) + 
         vorple.html.p("You feel the dreams once again come alight in your heart and you nod, happy.") + 
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End"))));
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
@@ -432,14 +432,14 @@ undum.game.situations.s34 = new undum.Situation({
         vorple.html.p("But what option is left to you anyway? Nothing. And anything would be better than staying here.") + 
         vorple.html.p("You take deep breaths. Then you change into a lighter suit, pack your lightest bag with essentials and as much money as you can find.") + 
         vorple.html.p("And then, one more time…you open the window, and take your life into your own hands...") + 
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End"))));
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
 undum.game.situations.s35 = new undum.Situation({
     enter: function( character, system, from ) {
         system.write( vorple.html.p("As the life weeps out of you, you feel a great peace, and you know you’ve made the right decision. Or maybe it’s just the weakness from the blood loss. Carefully laying the dagger to one side, you lay back and look up at the ceiling. And you give yourself up to the peace, the feeling of impending freedom, from all pain, from all suffering.") + 
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End"))));
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
@@ -452,8 +452,7 @@ undum.game.situations.s36 = new undum.Situation({
         vorple.html.p("And there is no way out. An army of servants accompany you even on the rare occasions you are allowed out to shop.") + 
         vorple.html.p("You no longer have courage or spirit left. You only wish to die, when the baby has been delivered. You’ve heard of women dying in childbirth, and now every waking moment you pray this to be your fate.") + 
         vorple.html.p("Maybe you’ll be lucky.") + 
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))
-        );
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
 
@@ -467,10 +466,19 @@ undum.game.situations.s37 = new undum.Situation({
         vorple.html.p("And though your husband’s temper is fierce, and his nightly rapes hard to bear, you are thirty years younger than him and thirty times smarter.") +
         vorple.html.p("The nightmare will not last forever. He will die. But you will remain, and this is what you’re preparing for. Once he’s gone you can finally raise yourself and be independent. You can work to free other women like you. You can, finally, live your own life.") +
         vorple.html.p("It is only a matter of time.") +
-        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))
-        );
+        vorple.html.tag("center", vorple.html.tag("h2", (vorple.html.link("credits", "The End")))));
     },
 });
+
+undum.game.situations.credits = new undum.SimpleSituation(vorple.html.tag("h3", "Credits:") + 
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Programmer\t") + vorple.html.tag("emph", "Ali Sajid Imami"))) +
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Writer\t") + vorple.html.tag("emph", "Shumaila Hashmi"))) +
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Illustrator\t") + vorple.html.tag("emph", "Sana Ahmad"))) +
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Project Coordinator\t") + vorple.html.tag("emph", "Urooj Shuja'at Ali Janjua"))) +
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Outreach Coordinator\t") + vorple.html.tag("emph", "Awais Ali"))) +
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Content Review and Editing\t") + vorple.html.tag("emph", "Nyda Ahmad"))) +
+vorple.html.p( vorple.html.tag("center", "Thank you all for playing this adventure." ))
+);
 
 // ---------------------------------------------------------------------------
 /* The Id of the starting situation. */
