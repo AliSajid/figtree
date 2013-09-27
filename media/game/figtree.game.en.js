@@ -21,16 +21,18 @@ undum.game.situations.start = new undum.Situation({
     enter: function( character, system, from ) {
         system.write( vorple.html.p("You are daydreaming, looking out at the mountains with eyes unseeing of their beauty, when the doorbell rings.") +
         vorple.html.p("For a minute, as the shards of the fantasy scatter about you, you're annoyed.") +
-        vorple.html.p("You are daydreaming, looking out at the mountains with eyes unseeing of their beauty, when the doorbell rings.") +
         vorple.html.p("And then you realise who it must be. ") +
-        vorple.html.p("You jump up from the sofa and heedless of your mother's edicts about demure carriage, " + vorple.html.link("./staircase","run down the wide staircase") + " and fling open the door, barely seconds after the person standing there has removed her finger from the doorbell.") +
+        vorple.html.p("You jump up from the sofa and heedless of your mother's edicts about demure carriage, " + vorple.html.link('./staircase',"run down the wide staircase") + " and fling open the door, barely seconds after the person standing there has removed her finger from the doorbell.") +
         vorple.html.p("It's Samina!") +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s02", "Greet her enthusiastically")) +
                                 vorple.html.tag("li", vorple.html.link("s03", "Greet her shyly")),
                                 {classes: "options"}));
-    },
-});
+        actions: {
+            staircase: vorple.html.p("Your house is one of the grandest in the village, although to you, lonely child of a landowner’s family and restricted by culture to this vast but limited space, it seems more like a prison.");
+}
+}});
+
 
 undum.game.situations.s02 = new undum.Situation({
     enter: function( character, system, from ) {
