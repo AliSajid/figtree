@@ -71,7 +71,7 @@ undum.game.situations.s04 = new undum.Situation({
 undum.game.situations.s05 = new undum.Situation({
     enter: function ( character, system, from ) {
         system.write( vorple.html.p("Both of you settled, you hear your friend's tales with a happy air. Samina is flushed from more than just the fresh air, for she has exciting news.") +
-        vorple.html.p(vorple.html.quote("I've convinced Baba to let me go to the teacher training institute in  ---bad (the village next to yours).  It will be a little difficult going and coming back each day, but the new road will be complete by next month and I hope that will make things easier.")) +
+        vorple.html.p(vorple.html.quote("I've convinced Baba to let me go to the teacher training institute in  Dukhsukh (the village next to yours).  It will be a little difficult going and coming back each day, but the new road will be complete by next month and I hope that will make things easier.")) +
         vorple.html.p("And then Samina grabs your hand") +
         vorple.html.p(vorple.html.quote("Join with me? We'll be able to complete the course in a year, and then we can teach in our very own school! I'm sure Uncle would…")) +
         vorple.html.p("Samina falters, remembering your father’s temper and strictness.") +
@@ -86,7 +86,7 @@ undum.game.situations.s05 = new undum.Situation({
 undum.game.situations.s06 = new undum.Situation({
     enter: function ( character, system, from ) {
         system.write( vorple.html.p(vorple.html.quote("Oh but Samina, I don’t think Abbu will let me...") + " the disappointment creeps into your voice, as you realize how close and yet so far your dreams are.") +
-        vorple.html.p("Samina reaches out to pat your hand reassuringly, her cheerful nature exerting itself." + vorple.html.quote("Don’t worry, I’m sure-")) +
+        vorple.html.p("Samina reaches out to pat your hand reassuringly, her cheerful nature exerting itself. " + vorple.html.quote("Don’t worry, I’m sure-")) +
         vorple.html.p("The doorbell rings again.") +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s17", "You go and see who's at the door.")),
@@ -185,7 +185,7 @@ undum.game.situations.s13 = new undum.Situation({
 
 undum.game.situations.s14 = new undum.Situation({
     enter: function ( character, system, from ) {
-        system.write( vorple.html.p("Inside Samina’s house, there is a middle-aged woman. She is wearing a flashy smile and even flashier clothes – evidently a friend from the city. Samina introduces the two of you, and you sit and talk for a while.As Samina is downstairs preparing snacks, the woman looks you up and down. Then she lowers her voice conspiratorially. ") +
+        system.write( vorple.html.p("Inside Samina’s house, there is a middle-aged woman. She is wearing a flashy smile and even flashier clothes – evidently a friend from the city. Samina introduces the two of you, and you sit and talk for a while. As Samina is downstairs preparing snacks, the woman looks you up and down. Then she lowers her voice conspiratorially. ") +
         vorple.html.p(vorple.html.quote("Samina told me about the trouble you’re facing with your family about this teacher training.")) +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s15", "Non committal response. What business is it of hers?")) +
@@ -470,7 +470,7 @@ undum.game.situations.s34 = new undum.Situation({
     enter: function ( character, system, from ) {
         system.setCharacterText(vorple.html.p("Your fate is blowing in the wind"));
         system.write( vorple.html.p("It is some hours later. There is silence in the room. Not even snores interrupt the peace anymore. Your mind is blank, the panic and horror having fought each other and subsided into numbness again.") + 
-        vorple.html.p("And then you hear a soft chiming. The windchime tingles in a breeze from the open window.") + 
+        vorple.html.p("And then you hear a soft chiming. The wind chime tingles in a breeze from the open window.") + 
         vorple.html.p("A way out.") + 
         vorple.html.p("But you are three floors up.") + 
         vorple.html.p("You probably couldn’t get far, even if you did survive the fall.") + 
@@ -524,7 +524,7 @@ vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Story by\t")
 vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Review and editing by\t") + vorple.html.tag("emph", "Urooj Shuja'at Ali Janjua"))) +
 vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Special Thanks\t") + vorple.html.tag("emph", "Awais Ali"))) +
 vorple.html.p( vorple.html.tag("center", "We would like to thank you for playing this adventure. We hope that we showed you a glimpse of the life of a young girl in rural Pakistan." )) +
-vorple.html.p( vorple.html.tag("center", "There are many NGOs and many good people doing work to uplift the voice of such oung girls. We salute their efforts and dedicate this game to them." ))
+vorple.html.p( vorple.html.tag("center", "There are many NGOs and many good people doing work to uplift the voice of such young girls. We salute their efforts and dedicate this game to them." ))
 //vorple.html.p( vorple.html.tag("center", "We would like to thank you for playing this adventure. We hope that we showed you a glimpse of the life of a young girl in rural Pakistan." ))
 );
 
