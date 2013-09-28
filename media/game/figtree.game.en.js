@@ -208,6 +208,7 @@ undum.game.situations.s16 = new undum.Situation({
         system.write( vorple.html.p("You find yourself spilling all your worries to this stranger. She listens patiently. Then finally, she pulls out a card. It has her name, number and address on it.") +
         vorple.html.p(vorple.html.quote("Keep this with you. And remember, you’re Samina’s friend, so that makes you my friend. If you ever need any help, call me. And I will help you any way I can.")) +
         vorple.html.p("You take the card and hide it in your bag. It might come in handy later. ") +
+		vorple.html.p("The next day the woman leaves for the city.") +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s17", "Later, back home")),
                                 {classes: "options"}));
@@ -218,11 +219,9 @@ undum.game.situations.s17 = new undum.Situation({
     enter: function ( character, system, from ) {
         if (from == "s16") {
                     character.sandbox.mainChoice = "sixteen";
-                    system.setCharacterText(vorple.html.p("You are still hopeful"));
                 }
         else if (from == "s13"){
                     character.sandbox.mainChoice = "thirteen";
-                    system.setCharacterText(vorple.html.p("You are still hopeful"));
                 }
         else {
             character.sandbox.mainChoice = "boo";
@@ -239,7 +238,6 @@ undum.game.situations.s17 = new undum.Situation({
         vorple.html.p(vorple.html.quote("Come to my room, Areesha. I have special news for you.")));
 
         if (from == 's04' || from == 's06') {
-            system.setCharacterText(vorple.html.p("You feel resigned to your fate. Mostly..."));
         system.write( vorple.html.p(vorple.html.quote("But mama, Samina is over.")) + 
             vorple.html.p(vorple.html.quote("Then come when she has left. But do not dally. There are important things I need to talk to you about.")));
         }
@@ -357,7 +355,7 @@ undum.game.situations.s23 = new undum.Situation({
 
 undum.game.situations.s24 = new undum.Situation({
     enter: function ( character, system, from ) {
-        system.setCharacterText(vorple.html.p("You have ahieved freedom, and happiness"));
+        system.setCharacterText(vorple.html.p("You have achieved freedom, and happiness"));
         system.write( vorple.html.tag("h3", "Six Months Later...") +
         vorple.html.p("As you put the key into the lock of your tiny flat, you pause for a second and look at the key closely. Even now, it amazes you that you have a key of your own, that you’ve gotten to a point where you can unlock the home you dreamed of. It is a tiny flat, but it comes with the immeasurable gift of freedom. And the love of a wonderful man.") +
         vorple.html.p("And so it is at this moment, when returning from the teacher training that you have joined and almost completed, some hours before Hashim also returns from work, just before you enter the home and prepare it in anticipation of his arrival, you take out this time to give thanks. That you are happy, and safe, and able to achieve so much.") + 
