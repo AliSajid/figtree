@@ -522,7 +522,7 @@ undum.game.situations.credits = new undum.SimpleSituation(vorple.html.tag("h3", 
 vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Code by\t") + vorple.html.tag("emph", "Ali Sajid Imami"))) +
 vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Story by\t") + vorple.html.tag("emph", "Shumaila Hashmi"))) +
 vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Review and editing by\t") + vorple.html.tag("emph", "Urooj Shuja'at Ali Janjua"))) +
-vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Special Thanks\t") + vorple.html.tag("emph", "Awais Ali"))) +
+vorple.html.p( vorple.html.tag("center", vorple.html.tag("strong", "Special Thanks\t") + vorple.html.tag("emph", "Awais Ali & Schadenfreudist Nerdocrat"))) +
 vorple.html.p( vorple.html.tag("center", "We would like to thank you for playing this adventure. We hope that we showed you a glimpse of the life of a young girl in rural Pakistan." )) +
 vorple.html.p( vorple.html.tag("center", "There are many NGOs and many good people doing work to uplift the voice of such young girls. We salute their efforts and dedicate this game to them." ))
 );
