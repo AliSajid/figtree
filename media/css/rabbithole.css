@@ -41,7 +41,7 @@ body {
 }
 
 #title .label {
-	font-family: 'Lily Script One', cursive;
+	font-family: 'Kaushan Script', cursive;
     overflow: hidden;
     background-color: #eff;
     opacity:0.6;
@@ -238,7 +238,7 @@ img.float_left {
 .tools.right {
 }
 .tools h1 {
-	font-family:'Lily Script One', cursive;
+	font-family:'Kaushan Script', cursive;
     font-size: 1.4em;
     font-weight: normal;
     margin-bottom: 0.6em;
@@ -257,7 +257,7 @@ img.float_left {
 }
 
 .buttons button, #reset-button {
-	font-family: 'Lily Script One', cursive;
+	font-family: 'Kaushan Script', cursive;
     font-size: 15px;
     background: #876 url(image/button_bg.jpg) no-repeat left top;
     color: #eee;
