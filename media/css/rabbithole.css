@@ -9,7 +9,7 @@ button_bg.jpg: CC-BY Randen Pederson http://www.flickr.com/photos/chefranden/318
 
 body {
     background: #170804 url("image/bg1.jpg") repeat left top;
-    font-family: Verdana, Arial, sans-serif;
+    font-family: 'Libre Baskerville', serif;
     font-size: 16px;
     line-height: 1.8em;
     overflow-y: scroll;
@@ -41,14 +41,14 @@ body {
 }
 
 #title .label {
-	font-family: 'Redressed', cursive;
+	font-family: 'Lily Script One', cursive;
     overflow: hidden;
     background-color: #eff;
     opacity:0.6;
     padding: 80px 20px;
     margin: auto;
     width: 460px;
-    height: 190px;
+    height: 210px;
     -moz-box-shadow: 0 0 16px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0 0 16px rgba(0,0,0,0.75);
     box-shadow: 0 0 16px rgba(0,0,0,0.75);
@@ -59,7 +59,7 @@ body {
     font-size: 36px;
     line-height: 1.4em;
     letter-spacing: 0.2em;
-    font-weight: bold;
+    font-weight: normal;
     padding-bottom: 1.1em;
 }
 #title h2 {
@@ -91,7 +91,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    position: absolute;
+    position: relative;
     font-size: 1.2em;
     font-style: italic;
     text-align: center;
@@ -238,7 +238,7 @@ img.float_left {
 .tools.right {
 }
 .tools h1 {
-	font-family:'Redressed', cursive;
+	font-family:'Lily Script One', cursive;
     font-size: 1.4em;
     font-weight: normal;
     margin-bottom: 0.6em;
@@ -257,7 +257,7 @@ img.float_left {
 }
 
 .buttons button, #reset-button {
-	font-family: 'Redressed', cursive;
+	font-family: 'Lily Script One', cursive;
     font-size: 15px;
     background: #876 url(image/button_bg.jpg) no-repeat left top;
     color: #eee;
