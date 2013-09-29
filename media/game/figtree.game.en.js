@@ -13,7 +13,7 @@ undum.game.id = "44d46fb0-a30a-4f7e-9c26-f6b46d37bdd5";
  * used to control saved-games. If you change the content of a game,
  * the saved games are unlikely to work. Changing this version number
  * prevents Undum from trying to load the saved-game and crashing. */
-undum.game.version = "0.5";
+undum.game.version = "1.0";
 
 /* The situations that the game can be in. Each has a unique ID. */
 

@@ -15,6 +15,13 @@ body {
     overflow-y: scroll;
 }
 
+.tools p.version {
+    margin-top: 1.0em;
+    font-style: italic;
+    font-size: 0.65em;
+    line-height: 1.5em;
+}
+
 /* Basic structure */
 #page {
     margin: 0 18em 0 0;
