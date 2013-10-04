@@ -13,7 +13,7 @@ undum.game.id = "44d46fb0-a30a-4f7e-9c26-f6b46d37bdd5";
  * used to control saved-games. If you change the content of a game,
  * the saved games are unlikely to work. Changing this version number
  * prevents Undum from trying to load the saved-game and crashing. */
-undum.game.version = "1.0";
+undum.game.version = "1.1";
 
 /* The situations that the game can be in. Each has a unique ID. */
 
@@ -261,6 +261,7 @@ undum.game.situations.s18 = new undum.Situation({
         vorple.html.p(vorple.html.quote("Areesha, I need you to listen to me carefully. You are old enough now to take this news maturely.")) +
         vorple.html.p("You wait, with bated breath.") +
         vorple.html.p(vorple.html.quote("There is a proposal that has come for you. The matter is practically settled already, because your father is very keen on the man. But they will visit us today. I want you to dress up to look your best.")) +
+        vorple.html.p(vorple.html.quote("The man is a political ally of your father's and his first wife died a few months ago. He is very rich and powerful and his alliance will mean a lot to your father."));
         vorple.html.p("The words echo in your ear, as you feel the elaborate plans you’ve constructed for your future evaporate into an arid, barren void."));
         // Conditional clause. If variable is "sixteen", link to 28 and 19. If it is "thirteen", link to 19 and 20. Else, link to 19 and 31.
         if (character.sandbox.mainChoice == "sixteen")
@@ -429,6 +430,7 @@ undum.game.situations.s30 = new undum.Situation({
 undum.game.situations.s31 = new undum.Situation({
     enter: function ( character, system, from ) {
         system.setCharacterText(vorple.html.p("This isn't over yet..."))
+        system.write(vorple.html.tag("h3", "Your wedding night approaches..."));
         system.write( vorple.html.p("It is supposed to be the happiest night of your life, but you find yourself completely numb.") +
         vorple.html.p("Inside you, there is a voice screaming, urging you to get up and tear off the heavy hateful clothes, smear the ugly make-up, throw away the odious jewellery, and just run far, far away.") +
         vorple.html.p("But the voice is getting smaller and smaller as hope dies, and your will along with it.") +
