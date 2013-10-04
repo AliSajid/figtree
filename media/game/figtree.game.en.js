@@ -261,7 +261,7 @@ undum.game.situations.s18 = new undum.Situation({
         vorple.html.p(vorple.html.quote("Areesha, I need you to listen to me carefully. You are old enough now to take this news maturely.")) +
         vorple.html.p("You wait, with bated breath.") +
         vorple.html.p(vorple.html.quote("There is a proposal that has come for you. The matter is practically settled already, because your father is very keen on the man. But they will visit us today. I want you to dress up to look your best.")) +
-        vorple.html.p(vorple.html.quote("The man is a political ally of your father's and his first wife died a few months ago. He is very rich and powerful and his alliance will mean a lot to your father."));
+        vorple.html.p(vorple.html.quote("The man is a political ally of your father's and his first wife died a few months ago. He is very rich and powerful and his alliance will mean a lot to your father.")) +
         vorple.html.p("The words echo in your ear, as you feel the elaborate plans you’ve constructed for your future evaporate into an arid, barren void."));
         // Conditional clause. If variable is "sixteen", link to 28 and 19. If it is "thirteen", link to 19 and 20. Else, link to 19 and 31.
         if (character.sandbox.mainChoice == "sixteen")
