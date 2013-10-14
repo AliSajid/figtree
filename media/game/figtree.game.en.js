@@ -13,7 +13,7 @@ undum.game.id = "44d46fb0-a30a-4f7e-9c26-f6b46d37bdd5";
  * used to control saved-games. If you change the content of a game,
  * the saved games are unlikely to work. Changing this version number
  * prevents Undum from trying to load the saved-game and crashing. */
-undum.game.version = "1.1";
+undum.game.version = "1.1.1";
 
 /* The situations that the game can be in. Each has a unique ID. */
 
@@ -31,9 +31,7 @@ undum.game.situations.start = new undum.Situation({
     },
     
     act: function (character, system, action) {
-//        if (action == "staircase") {
-            system.writeBefore("<p>Your house is one of the grandest in the village, although to you, lonely child of a landowner, restricted by culture to this vast but limited space, it seems more like a prison.</p>", '#s01scene');
-//        }
+        system.writeBefore("<p>Your house is one of the grandest in the village, although to you, lonely child of a landowner, restricted by culture to this vast but limited space, it seems more like a prison.</p>", '#s01scene');
     }
 });
 
@@ -112,15 +110,13 @@ undum.game.situations.s08 = new undum.Situation({
         system.write( vorple.html.tag("h3", "The next day…") +
         vorple.html.p("There is a honking of a car horn outside. You peep out the window to see a sleek, blue car. ") +
         vorple.html.p("Like a knight in shining armour, Hashim and his steed have arrived.") +
-        vorple.html.p("Running downstairs, hardly heeding your mother’s admonishments to adjust your " + vorple.html.link("./dupatta","dupatta") + ", you grab your bag and rush out. ", {id: 's08scene'}) +
+        vorple.html.p("Running downstairs, hardly heeding your mother’s admonishments to adjust your " + vorple.html.link("./dupatta","dupatta", {classes: "once"}) + ", you grab your bag and rush out. ", {id: 's08scene'}) +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s09", "Go outside")),
                                 {classes: "options"}));
     },
     act: function (character, system, action) {
-//        if (action == "dupatta") {
-            system.write("<p>Oh the accursed dupatta! That two metre band of cloth ruled your life. Keeping it pulled down, over your head, shielding your breasts, it seemed as though you spent a lifetime merely adjusting the damn thing.</p>", '#s08scene');
-//        }
+        system.write("<p>Oh the accursed dupatta! That two metre band of cloth ruled your life. Keeping it pulled down, over your head, shielding your breasts, it seemed as though you spent a lifetime merely adjusting the damn thing.</p>", '#s08scene');
     }
 });
 
@@ -148,16 +144,14 @@ undum.game.situations.s10 = new undum.Situation({
 undum.game.situations.s11 = new undum.Situation({
     enter: function ( character, system, from ) {
         system.setCharacterText(vorple.html.p("A romance is blossoming in your heart."));
-        system.write( vorple.html.p(vorple.html.quote("Indeed, " + vorple.html.link("./hashim","Hashim.") + "  I’m not a little girl anymore.") + " You smile slightly.") +
+        system.write( vorple.html.p(vorple.html.quote("Indeed, " + vorple.html.link("./hashim","Hashim.", {classes: "once"}) + "  I’m not a little girl anymore.") + " You smile slightly.") +
         vorple.html.p("Hashim laughs and suddenly shifts a bit in his seat. His eyes are still on the road but he seems to be paying you more attention. All the way there, he makes small talk with you, and when you reach Samina’s house you’ve had more conversation with him than with any other man in your whole life.", {id: "s11scene"}) +
                 vorple.html.tag("ul",
                                 vorple.html.tag("li", vorple.html.link("s12", "Go and meet Samina")),
                                 {classes: "options"}));
     },
     act: function (character, system, action) {
-//        if (action == "hashim") {
-            system.writeBefore("<p>You’ve left out the customary addition of bhai (brother). You hope he notices and realizes the implication.</p>", '#s11scene');
-//        }
+        system.writeBefore("<p>You’ve left out the customary addition of bhai (brother). You hope he notices and realizes the implication.</p>", '#s11scene');
     }
 });
 
@@ -463,7 +457,7 @@ undum.game.situations.s33 = new undum.Situation({
         vorple.html.p("Before you can even think twice, you lean over, and plunge the dagger into his chest.") +
         vorple.html.p("Over and over, you thrust in the blade. And then, as he breathes his last, you realize just what you have done. The horror of the act hits you and you back away, dropping the dagger.") +
                 vorple.html.tag("ul",
-                                vorple.html.tag("li", vorple.html.link("s34", "Hours passs by...")),
+                                vorple.html.tag("li", vorple.html.link("s34", "Hours pass by...")),
                                 {classes: "options"}));
     },
 });
